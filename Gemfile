@@ -37,6 +37,8 @@ group :test do
   gem 'watir'
   gem 'selenium-webdriver'
   gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -59,7 +61,7 @@ gem 'haml'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_one :identity, dependent: :destroy
   def identity
     Identity.where(id:self.uid).first
   end
